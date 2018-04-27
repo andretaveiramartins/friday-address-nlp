@@ -16,3 +16,6 @@ launch.json
 #Ignore virtual environment configurations
 nlp-address-venv/
 lockfile
+
+#Mac files
+.DS_Store
