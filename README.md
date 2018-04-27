@@ -6,8 +6,9 @@ Python 3.6
 
 Download and install pip and python 3.6
 
-## Optional : Create your own virtual environment
-<code>python3 -m venv /path/to/new/virtual/environment<code>
+# Optional : Create your own virtual environment
+
+<code>python3 -m venv /path/to/new/virtual/environment</code>
 
 # Install dependencies
 
@@ -17,11 +18,12 @@ Download and install pip and python 3.6
 
 To run the server just execute in the command line:
 
-<code>python -m app<code>
+<code>python -m app</code>
 
 # Running the server as a container
 
 <code>docker build . -t address_nlp:latest</code>
+
 <code>docker run -d -p 5000:5000 address_nlp</code>
 
 # Using the API
