@@ -1,6 +1,8 @@
 # Address NLP
 
-Python 3.6
+This project uses google Geocoding API to parse a given address in the following formnat:
+
+<code>{"street": "STREET NAME", "street_number": "STREET NUMBER}</code>
 
 # Environment setup 
 
@@ -31,3 +33,7 @@ To run the server just execute in the command line:
 Assuming you're running from your local computer, just open your browser and enter:
 
 http://localhost:5000/address_nlp_process?address=ADDRESS_TO_BE_PARSED
+
+# Known limitations
+
+This project uses google Geocode API to parse a given address and output the street number and name. If the given address is not valid you'll receive an error. Google will associate the given address with a real address so if a fake address is given it is possible that the street name might differ due to google NLP/approximation algorith. For the cases where we have street numbers such as "123 B" or "b 23" google most times crop the letter out.
