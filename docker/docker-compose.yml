@@ -1,6 +1,6 @@
 version: '2'
 services:
-  mock-dw-sfdc-server:
-    image: 970696941360.dkr.ecr.eu-west-1.amazonaws.com/core-integration/dw-sfdc-mock-server:0.1a
+  address_nlp_server:
+    image: REGISTRY
     ports:
       - "5000:5000"
