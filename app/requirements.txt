@@ -1,0 +1,4 @@
+Flask == 0.12.2
+PyLint==1.7.2
+Requests==2.18.4
+PyYAML==3.12

@@ -1,0 +1,12 @@
+[
+    {"address":"Münsterstraße 45","expected_result":{"street":"Münsterstraße","street_number":"45"}},
+    {"address":"Blaufeldweg 123B","expected_result":{"street":"Auf der Vogelwiese","street_number":"123B"}},
+    {"address":"Auf der Vogelwiese 23 b","expected_result":{"street":"Auf der Vogelwiese","street_number":"23 b"}},
+    {"address":"4, Rue de la Révolution","expected_result":{"street":"Rue de la Révolution","street_number":"4"}},
+    {"address":"200 Broadway Avenue","expected_result":{"street":"Broadway Avenue","street_number":"200"}},
+    {"address":"Calle Aduana, 29","expected_result":{"street":"Calle Aduana","street_number":"29"}},
+    {"address":"Calle 39 No 1540","expected_result":{"street":"Calle 39 No","street_number":"1540"}},
+    {"address":"Am Bächle 23","expected_result":{"street":"Am Bächle","street_number":"23"}},
+    {"address":"200 Broadway Av.","expected_result":{"street":"Broadway Av.","street_number":"200"}}
+    
+]

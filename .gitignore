@@ -1,0 +1,18 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+#Ignore python compiled code
+*.pyc
+
+#.vscode
+.vscode/
+launch.json
+
+# Ignore Log files
+*.log
+
+#Ignore Config files
+*.cfg*
+#Ignore virtual environment configurations
+nlp-address-venv/
+lockfile
