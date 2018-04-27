@@ -4,7 +4,7 @@ from flask import Flask
 import web.address_nlp_processor_routes as address_nlp_processor_routes
 
 if __name__ == '__main__':
-    mock_server = Flask(__name__)
-    mock_server.register_blueprint(address_nlp_processor_routes.demandware_routes)
-    mock_server.run(host='0.0.0.0', debug=True)
+    server = Flask(__name__)
+    server.register_blueprint(address_nlp_processor_routes.address_nlp_routes)
+    server.run(host='0.0.0.0', debug=True)
     

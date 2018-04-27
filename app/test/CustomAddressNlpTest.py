@@ -9,15 +9,10 @@ class CustomAddressNlpTest(unittest.TestCase):
 
     def setUp(self):
         self.test_data=None
-        self.config = None
         try:
             with open(os.path.join("samples" ,"address-nlp-test-data.json")) as file_stream:
                 self.test_data = json.load(file_stream)
         except Exception as exc:
-            print (exc)
-        try:
-            self.config = Utils.load_yml_config(os.path.join("config.yml"))
-        except yaml.YAMLError as exc:
             print (exc)
 
     def test_process_address_mismatch_processed_source_address(self):

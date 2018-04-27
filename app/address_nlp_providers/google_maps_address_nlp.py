@@ -1,17 +1,8 @@
 from requests import get
-from pprint import pprint
 from json import dump
-from csv import QUOTE_ALL, DictWriter
-from .. import Utils
+import sys
 import yaml
 import os
-
-try:
-    config = Utils.load_yml_config(os.path.join("config.yml"))
-except yaml.YAMLError as exc:
-    print (exc)
-
-API_KEY = config['google_api_key']
 
 def _address_resolver(json):
     final = {}
@@ -40,13 +31,9 @@ def _address_resolver(json):
     return final
     
 def process_address(address):
-    url = 'https://maps.googleapis.com/maps/api/geocode/json?components=&language=&region=&bounds=&key='+API_KEY
+    url = 'https://maps.googleapis.com/maps/api/geocode/json?components=&language=&region=&bounds=&'
     url = url + '&address='+ address.replace(" ","+")
     data= None
-    try:
-        pass
-    except Exception as identifier:
-        pass
     response = get(url)
     response.raise_for_status()
     data  = _address_resolver(response.json())
